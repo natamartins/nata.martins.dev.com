@@ -1,0 +1,46 @@
+.container_main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.menu_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        li {
+            a {
+                color: #e1e1e1;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.box_wtp {
+    position: absolute;
+    padding: 0px 2rem;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 1.5rem;
+
+    a {
+        img {
+            width: 60px;
+            height: 60px;
+
+            &:hover {
+                scale: 1.2;
+            }
+        }
+    }
+}
+
+.box_contents {
+    padding: 2rem;
+}

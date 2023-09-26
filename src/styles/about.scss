@@ -1,0 +1,25 @@
+.box_about-me {
+    width: 100%;
+    max-width: 90%;
+
+    .about {
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin: 5px 0px;
+        line-height: 1.5;
+    }
+
+    a {
+        color: #e1e1e1;
+
+        &:hover {
+            color: #555;
+        }
+    }
+}

@@ -2,6 +2,12 @@
     width: 100%;
     max-width: 90%;
 
+    a{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
     .about {
         margin-bottom: 1rem;
     }

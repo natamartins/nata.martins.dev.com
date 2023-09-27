@@ -32,31 +32,3 @@
         }
     }
 }
-
-.profile {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 2rem;
-    border-right: 2px solid rgb(34, 34, 34);
-    gap: 5rem;
-}
-
-.box_profile {
-    margin-top: 3rem;
-}
-
-.box_profile-img {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 10px;
-
-    img {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        object-fit: cover;
-    }
-}

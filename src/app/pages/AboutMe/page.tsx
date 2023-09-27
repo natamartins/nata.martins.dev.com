@@ -1,9 +1,13 @@
+import { ArrowDownLeftIcon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
   return (
     <div className='box_about-me'>
+      <Link href='/'>
+        <ArrowDownLeftIcon /> Home
+      </Link>
       <div className='about'>
         <h2>Sobre</h2>
         <p>
@@ -13,12 +17,12 @@ const page = () => {
           No meu blog tem um artigo bem legal sobre uma prova de corrida que realizei, deixarei o link aqui.
         </p>
         <Link href='https://nata-codedev-com-br.vercel.app/posts/PrimeiroPost' target='__blank' >
-          Artigo!!!
+          ## Artigo!!!
         </Link>
 
         <p>
           Criando diversos projetos, venho praticando e aprimorando minhas habilidades no front-end, não ficando preso apenas nessa área, sempre reservo um tempo para estudar outras áreas, como o back-end e designer.
-          Meu foco é me tornar um especialista na frente.
+          Meu foco é me tornar um especialista no front.
         </p>
       </div>
 

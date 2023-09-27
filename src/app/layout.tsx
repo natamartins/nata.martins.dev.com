@@ -5,7 +5,7 @@ import Image from 'next/image'
 import MyPhoto from '@/img/photo-perfil.jpeg'
 import IconWTP from '@/img/whatsapp.png'
 import Link from 'next/link'
-import { Github, Instagram, Linkedin, MessageCircle, MessageSquareDashedIcon, Twitter } from 'lucide-react'
+import { ArrowUpRight, Github, Instagram, Linkedin, MailPlus, MessageCircle, MessageSquareDashedIcon, Twitter } from 'lucide-react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <header className='container_nav'>
           <nav className='box_nav'>
-            <p>NTCodeDev</p>
+            <h1>NTCodeDev</h1>
 
             <ul className='box_nav-list'>
               <li>
@@ -57,7 +57,11 @@ export default function RootLayout({
                 <Image src={MyPhoto} alt='' />
               </div>
               <h2>Natã Martins</h2>
-              <p>nata.codedev@gmail.com</p>
+              <p>
+                <Link href='mailto:nata.codedev@gmail.com' target='__blank'>
+                  <MailPlus size={15} />nata.codedev@gmail.com
+                </Link>
+              </p>
             </div>
 
             <div className='menu_links'>
@@ -65,17 +69,17 @@ export default function RootLayout({
               <ul>
                 <li>
                   <Link href='/pages/AboutMe'>
-                    About Me
+                    <ArrowUpRight /> Sobre
                   </Link>
                 </li>
                 <li>
                   <Link href='/pages/Projects'>
-                    Projects
+                    <ArrowUpRight /> Projetos
                   </Link>
                 </li>
                 <li>
                   <Link href='/pages/Skills'>
-                    Skills
+                    <ArrowUpRight />  Habilidades
                   </Link>
                 </li>
               </ul>

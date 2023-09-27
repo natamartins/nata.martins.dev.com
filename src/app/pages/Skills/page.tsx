@@ -1,8 +1,13 @@
+import { ArrowDownLeftIcon } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
     return (
         <div className='card_skills'>
+            <Link href='/'>
+                <ArrowDownLeftIcon /> Home
+            </Link>
             <div className='skills'>
                 <h2>Skills</h2>
                 <div>

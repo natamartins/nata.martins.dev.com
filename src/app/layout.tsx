@@ -5,7 +5,8 @@ import Image from 'next/image'
 import MyPhoto from '@/img/photo-perfil.jpeg'
 import IconWTP from '@/img/whatsapp.png'
 import Link from 'next/link'
-import { ArrowUpRight, Github, Instagram, Linkedin, MailPlus, MessageCircle, MessageSquareDashedIcon, Twitter } from 'lucide-react'
+import NavBar from '@/components/NavBar/Index'
+import { ArrowUpRight, MailPlus } from 'lucide-react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,34 +23,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <header className='container_nav'>
-          <nav className='box_nav'>
-            <h1>NTCodeDev</h1>
-
-            <ul className='box_nav-list'>
-              <li>
-                <Link href='https://www.linkedin.com/in/nat%C3%A3martins/' target='__blank'>
-                  <Linkedin />
-                </Link>
-              </li>
-              <li>
-                <Link href='https://github.com/natamartins' target='__blank'>
-                  <Github />
-                </Link>
-              </li>
-              <li>
-                <Link href='https://twitter.com/NataCodedev' target='__blank'>
-                  <Twitter />
-                </Link>
-              </li>
-              <li>
-                <Link href='https://www.instagram.com/nathan_martins3/?theme=dark' target='__blank'>
-                  <Instagram />
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <NavBar />
         <main className='container_main'>
           <section className='profile'>
             <div className='box_profile'>
@@ -91,6 +65,7 @@ export default function RootLayout({
               </Link>
             </div>
           </section>
+
           <section className='content'>
             <div className='box_contents'>
               {children}

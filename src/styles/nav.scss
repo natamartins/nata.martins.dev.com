@@ -32,3 +32,22 @@
         }
     }
 }
+
+.open{
+    display: none;
+}
+
+// Mobile
+@media (max-width:765px){
+    .box_nav-list{
+        display: none;
+    }
+
+    .open{
+      display: flex;
+      background-color: transparent;
+      color: #e1e1e1;
+      border: none;
+      cursor: pointer;
+    }
+}
